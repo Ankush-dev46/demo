@@ -1,0 +1,70 @@
+#2program
+[
+    {
+        "Name":"Somu",
+        "Payment":{
+            "Total":600
+        },
+        "Transaction":{
+            "Price":400
+        }
+    },
+    {
+        "Name":"Arthur",
+        "Payment":{
+            "Total":500
+        },
+        "Transaction":{
+            "Price":350
+        }
+    },
+    {
+        "Name":"Charles",
+        "Payment":{
+            "Total":550
+        },
+        "Transaction":{
+            "Price":450
+        }
+    },
+    {
+        "Name":"John",
+        "Payment":{
+            "Total":600
+        },
+        "Transaction":{
+            "Price":600
+        }
+    },
+    {
+        "Name":"Lenny",
+        "Payment":{
+            "Total":600
+        },
+        "Transaction":{
+            "Price":150
+        }
+    }
+]
+
+#3rd program
+const car ={
+    Brand: "Toyota",
+    Model: "Supra",
+    Year: "2005",
+    Color: "Yellow"
+};
+console.log("\nOriginal Properties: \n");
+for(let key in car){
+    console.log(${key}: ${car[key]});
+}
+console.log(Object.keys(car))
+const second = Object.keys(car)[1];
+delete car[second];
+console.log("\nAfter Deletion: \n");
+for(let key in car){
+    console.log(${key}: ${car[key]});
+}
+console.log(Object.keys(car))
+const length= Object.keys(car).length;
+console.log("\nThe length of object is: ",length);
